@@ -5,9 +5,10 @@ html, body{
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    align-items: center;
 }
 
-.button{
+button{
     width: 66px;
     padding: 20px;
     margin: 3px;

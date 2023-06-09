@@ -10,11 +10,14 @@ Array.from(buttons).forEach((button) => {
     if (e.target.innerHTML == "=") {
       string = eval(string);
       document.querySelector("input").value = string; // putting outputString in inputfield of html
-    } else if (e.target.innerHTML == "=") {
-      string = " ";
+    } else if (e.target.innerHTML == "Del") {
+      string = string.substring(0, string.length - 1);
       document.querySelector("input").value = string;
     } else if (e.target.innerHTML == "AC") {
       string = " ";
+      document.querySelector("input").value = string;
+    } else if (e.target.innerHTML == "%") {
+      string = string / 100;
       document.querySelector("input").value = string;
     } else {
       console.log(e.target);
